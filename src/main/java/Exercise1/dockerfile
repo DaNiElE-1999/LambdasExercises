@@ -1,0 +1,7 @@
+# Base Image
+FROM openjdk:11
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+RUN javac BookExercise1.java
+CMD ["java", "BookExercise1.java"]
+#ENTRYPOINT ["java", "BookExercise1"]
